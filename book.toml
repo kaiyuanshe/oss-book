@@ -1,0 +1,9 @@
+[book]
+authors = ["Zhuang Biaowei","Wang Wei"]
+language = "zh"
+multilingual = true
+src = "src"
+title = "开源社 —— 开源书籍"
+
+[build]
+create-missing = false
