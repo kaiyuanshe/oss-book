@@ -20,12 +20,20 @@ jobs:
           mdbook-version: 'latest'
 
       - run: mdbook build
-
-      - run: cp test.md ./book/test.md
       
+      - run: cp book.js ./book/book.js
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.4.1
+        
+      - run: npm install -g reveal-md
+      
+      - run: reveal-md src/ --separator "^---\n" --vertical-separator "^------\n" --static ./book/slide
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book
+          
