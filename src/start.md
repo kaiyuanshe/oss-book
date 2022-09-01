@@ -10,6 +10,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 访问 https://www.rust-lang.org/tools/install
 下载 rustup 并安装
 ```
+---
 
 ## 安装 mdbook
 
@@ -18,6 +19,8 @@ cargo install mdbook
 # 或
 cargo install --git https://github.com/rust-lang/mdBook.git mdbook
 ```
+
+---
 
 ## 编译开源书籍
 
@@ -29,3 +32,7 @@ mdbook serve
 ```
 
 在浏览器中打开 http://localhost:3000 访问开源书籍的内容页面。
+
+---
+
+## 恭喜
