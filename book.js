@@ -677,3 +677,27 @@ function playground_text(playground) {
         }, { passive: true });
     })();
 })();
+
+
+window.addEventListener("load", function(){
+    const content = document.getElementById("content")
+    const style_str = "box-sizing: inherit;" +
+                      "background-color: #04AA6D;" + 
+                      "color: #ffffff;" + 
+                      "border-color: #04AA6D;" + 
+                      "font-size: 18px;" +
+                      "font-family: 'Source Sans Pro', sans-serif;" +
+                      "padding-left: 19px;" +
+                      "padding-right: 19px;" + 
+                      "border: 1px solid #cccccc;" + 
+                      "border-radius: 5px;";
+    var name = window.location.pathname.split("/").pop();
+    if ( name == '' ) {
+        name = 'start.html'
+    }
+    const url = "./slide/"+name;
+    const html_str = "<div align=\"center\">" + 
+                    "<a target=\"_blank\" align=\"center\" style=\"" + style_str + "\"" +
+                    "href=\""+url+"\">View Slide</a></div>";
+    content.insertAdjacentHTML("beforeend",html_str);
+});
