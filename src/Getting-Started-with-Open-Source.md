@@ -1,8 +1,8 @@
 # 开源是什么？
 
-* Open Source，是一个专有名词，由开源软件促进会（Open Source Initiative）在1998年定义
-* OSD（Open Source Definition），是一份由OSI发布的文档，经由Debian的创始人Bruce Perens撰写的《Debian自由软件指导方针》修改而来
-* OSD一共10条，规定了符合开源的10个特征，如果一个项目仅仅是把自己的源代码公开出来，就宣称自己是开源软件，那是不成立的
+* Open Source，是一个专有名词，由开源软件促进会（Open Source Initiative）在 1998 年定义
+* OSD（Open Source Definition），是一份由 OSI 发布的文档，经由 Debian 的创始人 Bruce Perens 撰写的《Debian 自由软件指导方针》修改而来
+* OSD 一共 10 条，规定了符合开源的 10 个特征，如果一个项目仅仅是把自己的源代码公开出来，就宣称自己是开源软件，那是不成立的
 
 ---
 
