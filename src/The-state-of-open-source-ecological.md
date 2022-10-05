@@ -33,3 +33,25 @@
     * 2021年，托管的代码仓库超过了 2000 万，⽤户总量超过 800 万
 
 <img src="./img/github-01.png" height="450" />
+
+---
+
+## 2022年新思科技开源安全和风险分析报告
+
+<img src="./img/synopsys-01.png" height="500" />
+
+---
+
+<img src="./img/synopsys-02.png" height="500" />
+
+---
+
+<img src="./img/synopsys-03.png" height="500" />
+
+---
+
+![](./img/synopsys-04.png)
+
+---
+
+## 大缓坡
