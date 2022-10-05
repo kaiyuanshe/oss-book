@@ -36,6 +36,25 @@
 
 ---
 
+## 重大的并购案例
+
+* 1999 年 Red Hat 收购 Cygnus Solutions（6.75 亿美元）
+* 2003 年 Novell 收购SUSE（2.1 亿美元）
+* 2005 年 Oracle 收购 InnoDB
+* 2006 年 Oracle 收购 SleeepyCat
+* 2006 年 Red Hat 收购 JBoss（3.5 亿美元）
+* 2007 年 Apple 收购 CUPS
+* 2007 年 Sourcefire 收购 ClamAV
+* 2007 年 Citrix 收购 XenSource（5 亿美元）
+* 2008 年 Sun 收购 MySQL（10 亿美元）
+* 2008 年 SpringSource 收购 Covalent Technologies
+* 2009 年 Oracle 收购 Sun（74 亿美元）
+* 2009 年 VMware 收购 Spring Source（4.2 亿美元）
+* 2018 年 Microsoft 收购 GitHub（75 亿美元）
+* 2019 年 IBM 收购 Red Hat（340 亿美元）
+
+---
+
 ## 2022年新思科技开源安全和风险分析报告
 
 <img src="./img/synopsys-01.png" height="500" />
