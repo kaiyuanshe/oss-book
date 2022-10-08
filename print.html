@@ -135,31 +135,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="编译开源书籍"><a class="header" href="#编译开源书籍">编译开源书籍</a></h1>
-<p>本书的内容使用 <code>mdbook</code> 进行编写，并通过<a href="https://www.kaiyuanshe.cn">开源社</a>发布。</p>
-<h2 id="安装-rust"><a class="header" href="#安装-rust">安装 rust</a></h2>
-<pre><code class="language-bash">curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# 或
-访问 https://www.rust-lang.org/tools/install
-下载 rustup 并安装
-</code></pre>
-<hr />
-<h2 id="安装-mdbook"><a class="header" href="#安装-mdbook">安装 mdbook</a></h2>
-<pre><code class="language-bash">cargo install mdbook
-# 或
-cargo install --git https://github.com/rust-lang/mdBook.git mdbook
-</code></pre>
-<hr />
-<h2 id="编译开源书籍-1"><a class="header" href="#编译开源书籍-1">编译开源书籍</a></h2>
-<pre><code class="language-bash">git clone https://github.com/kaiyuanshe/oss-book
-cd oss-book
-mdbook build
-mdbook serve
-</code></pre>
-<p>在浏览器中打开 http://localhost:3000 访问开源书籍的内容页面。</p>
-<hr />
-<h2 id="恭喜"><a class="header" href="#恭喜">恭喜</a></h2>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="开源是什么"><a class="header" href="#开源是什么">开源是什么？</a></h1>
+                        <h1 align="center">开源培训课程</h1>
+<h2 align="center">开源社</h2><div style="break-before: page; page-break-before: always;"></div><h1 id="开源是什么"><a class="header" href="#开源是什么">开源是什么？</a></h1>
 <ul>
 <li>Open Source，是一个专有名词，由开源软件促进会（Open Source Initiative）在 1998 年定义</li>
 <li>OSD（Open Source Definition），是一份由 OSI 发布的文档，经由 Debian 的创始人 Bruce Perens 撰写的《Debian 自由软件指导方针》修改而来</li>
@@ -683,6 +660,9 @@ mdbook serve
 <p>对于企业来说，使用开源能够省钱，参与开源甚至主动开源还能赚钱，这才是他们愿意持续投入开源的核心动力。</p>
 <p>个人可以坚持理想主义，但是企业首先应该活下去。只有那些斤斤计较，然后不断尝试，再不断地从开源获得回报的企业，才会是开源领域坚定的支持者。</p>
 <hr />
+<h2 id="开源给企业带来的机会"><a class="header" href="#开源给企业带来的机会">开源给企业带来的机会</a></h2>
+<img src="./img/LFEOSG-01.png" />
+<hr />
 <h2 id="开源是如何驯化企业的"><a class="header" href="#开源是如何驯化企业的">开源是如何驯化企业的？</a></h2>
 <p>越来越多的企业开始尝试开源，但是，事情往往都不是一帆风顺的，尤其是那些较早采用开源的企业，多半都有掉进坑里的机会。但是，至少有两类企业，会坚定的使用开源。<strong>第一类是非常小，甚至尚未赢利的初创企业</strong>。对于他们来说，成本是首要因素。<strong>另一类是高速成长，越来越大的企业</strong>，传统的商业软件，已经无法满足他们的需求了，他们只能自己动手，基于开源软件做修改，来满足自身的需求。第三类企业，则是那些<strong>找到了基于开源的商业模式的企业</strong>。随着开源软件的不断成熟，这样的商业模式越来越具有可行性，也就有越来越多的企业投身其中。</p>
 <p>从使用，到修改后使用，甚至修改后赚钱，总之是有很多企业，在内部维护了某个开源软件的自己的私有版本。这时，有两种新的“烦恼”产生了。<strong>首先是License</strong>，企业们开始意识到，有些License是强制他们要在修改商用之后，将修改的代码开源的。为了避免法律风险，他们只能将代码回馈社区。<strong>其次是开源的发展速度太快了</strong>，当开源社区又推出新的版本，企业自己的私有版本，该何去何从呢？留之无用，弃之可惜。企业面临一个艰难的选择，要不要将自己的私有版本，回馈社区？也许，尽可能减少与上游社区的差异，才是成本更低，收益更高的方案。</p>
@@ -698,7 +678,9 @@ mdbook serve
 <p>对于员工们发生的变化，有些企业是比较担忧的。随着开源技术大行其道，开发者群体的能力和经验积累变得更加容易了。一方面企业更加容易招到符合自己需要的人才，另一方面，企业自己的人才也更容易跳槽了。当然，那些不太懂开源的企业只是关注自己失去的人才，而那些更懂开源的企业，则看到了更大的机会。</p>
 <p>一个企业，为啥要把自己的内部项目开源出来呢？我们可以思考一个数学模型，某一个市场，原本的规模是100，其中一个企业的市场占有率是20%。当他开源了一个项目，这个市场将变得更大、更成熟，市场规模从100变成了200。由于参与者众多，企业的市场占有率从20%，变成了15%。但是，他的整体收益，依然上涨了50%。当然还有一些企业，通过开源，不仅做大了市场，更提升了自己的市场份额，那就更厉害了！</p>
 <p><strong>谷歌的安卓系统，就是成功典范！</strong></p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="企业使用开源与供应链风险"><a class="header" href="#企业使用开源与供应链风险">企业使用开源与供应链风险</a></h1>
+<hr />
+<h2 id="企业参与开源的不同阶段"><a class="header" href="#企业参与开源的不同阶段">企业参与开源的不同阶段</a></h2>
+<img src="./img/LFEOSG-02.png" /><div style="break-before: page; page-break-before: always;"></div><h1 id="企业使用开源与供应链风险"><a class="header" href="#企业使用开源与供应链风险">企业使用开源与供应链风险</a></h1>
 <h2 id="如何研究开源供应链风险"><a class="header" href="#如何研究开源供应链风险">如何研究开源供应链风险？</a></h2>
 <ul>
 <li>技术性风险
@@ -749,7 +731,89 @@ mdbook serve
 </ul>
 </li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="企业之间基于开源软件的竞争与合作"><a class="header" href="#企业之间基于开源软件的竞争与合作">企业之间基于开源软件的竞争与合作</a></h1>
+<h2 id="论文来源"><a class="header" href="#论文来源">论文来源</a></h2>
+<h3 id="competitive-strategy-for-open-source-software"><a class="header" href="#competitive-strategy-for-open-source-software">《Competitive Strategy for Open Source Software》</a></h3>
+<ul>
+<li>Vineet Kumar ：哈佛大学哈佛商学院，波士顿，马萨诸塞州，02163，vkumar@hbs.edu</li>
+<li>Brett R. Gordon ：哥伦比亚大学商学院，纽约，纽约，10027，brgordon@columbia.edu</li>
+<li>Kannan Srinivasan ：卡内基梅隆大学泰珀商学院，宾夕法尼亚州匹兹堡，15213，kannans@andrew.cmu.edu。</li>
+</ul>
+<hr />
+<h2 id="论文摘要"><a class="header" href="#论文摘要">论文摘要</a></h2>
+<p>商业开源软件（COSS）产品 —— 基于公开源代码的私人开发的软件 —— 代表了一个快速增长、价值数十亿美元的市场。开源软件市场竞争的一个独特方面是，许多开源许可证要求企业公开某些增强功能，这就刺激了企业搭上他人贡献的便车。这种做法提出了一些令人费解的问题。首先，如果竞争者可以免费使用这些贡献，那么企业为什么要进一步开发产品？第二，一个基于免费搭车的市场如何产生高质量的产品？第三，从公共政策的角度来看，强制分享改进的做法是提高还是降低了消费者剩余和行业利润？</p>
+<p>为了解决这些问题，我们建立了一个开源软件公司之间的双边（two-sided）竞争模型。我们的模型包括：（1）两家公司在一个垂直差异化的市场中竞争，其中产品质量是公开与私有成分的混合；（2）一个开发者市场，公司在观察到他们对开源贡献的信号后雇用他们。我们证明，在均衡中支持搭便车行为，强制分享的设置可以产生高质量的产品，而且搭便车实际上可以增加消费者剩余和行业利润。</p>
+<hr />
+<h2 id="模型一私人和共享特征市场"><a class="header" href="#模型一私人和共享特征市场">模型一：私人和共享特征市场</a></h2>
+<img src="./img/cs-oss-01.png" />
+<hr />
+<h2 id="模型二1产品市场私有特性开发模式"><a class="header" href="#模型二1产品市场私有特性开发模式">模型二（1）：产品市场——私有特性开发模式</a></h2>
+<img src="./img/cs-oss-02-1.png" />
+<hr />
+<h2 id="模型二2产品市场共享特性开发模式"><a class="header" href="#模型二2产品市场共享特性开发模式">模型二（2）：产品市场——共享特性开发模式</a></h2>
+<img src="./img/cs-oss-02-2.png" />
+<hr />
+<h2 id="模型的结论"><a class="header" href="#模型的结论">模型的结论</a></h2>
+<ul>
+<li>在企业的竞争市场中
+<ul>
+<li>强制分享的设置（类似于GPL的授权协议）可以产生高质量的产品</li>
+<li>积极贡献更多开源的企业，获得更加的竞争力</li>
+<li>在均衡中支持搭便车的行为，搭便车实际上可以增加消费者剩余与行业利润</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="企业与开源世界之间的竞争与合作"><a class="header" href="#企业与开源世界之间的竞争与合作">企业与开源世界之间的竞争与合作</a></h1>
+<h2 id="企业与开发者市场"><a class="header" href="#企业与开发者市场">企业与开发者市场</a></h2>
+<img src="./img/cs-oss-03.png" />
+<hr />
+<h2 id="开发者发出的信号"><a class="header" href="#开发者发出的信号">开发者发出的信号</a></h2>
+<p>开放源码为高技能的开发者提供了一种机制，通过向开放源码贡献功能，向企业发出他们的技能（类型）。开放源码的贡献为企业提供了一个关于开发者技能的可靠信号，因为潜在的雇主可以审查开发者的贡献（Leppamaki 和 Mustonen 2009）。这种贡献的动机与解释开发者的开源贡献的经济信号原理是一致的（Lerner 和 Tirole，2002）。</p>
+<hr />
+<h2 id="开发者的竞争市场中的均衡"><a class="header" href="#开发者的竞争市场中的均衡">开发者的竞争市场中的均衡</a></h2>
+<ul>
+<li><strong>开发者对企业的溢出效应</strong>：开发者对开源的贡献越多，企业对于他们的竞争就越不激烈，这样就起到了减少工资的作用</li>
+<li><strong>企业与企业之间会发生溢出效应</strong>：强制分享的设置，会导致企业对于开发者人才的竞争，不那么激烈</li>
+</ul>
+<hr />
+<h2 id="如何理解企业之间通过开源竞争"><a class="header" href="#如何理解企业之间通过开源竞争">如何理解企业之间通过开源竞争？</a></h2>
+<p>有人认为：经济学，就是研究“稀缺性”的学科，在传统的世界里，我们谈到稀缺性，往往都会想到“各种资源”、“生产资料”。但是在数码的世界里，几乎所有的资源、资料，都是可以被无限复制的，随着网络建设的不断发展，我们甚至无需“软盘”、“光盘”、“U盘”，而且网络传输的费用也几乎等于0。</p>
+<p>在数码的世界里，唯有“时间”是稀缺的，我们有时候称之为“眼球经济”、或者“注意力经济”、或者“流量经济”，全人类的所有可使用的时间，是一个很大的常数。各个开源社区，当然还有互联网、SNS、短视频和购物平台，都在争夺这些时间与注意力。</p>
+<p>我们可以从这个角度，来理解企业之间的竞争，企业开源不仅仅是与其他开源企业在竞争，而是在与所有的潜在竞争对手，争夺开发者的注意力（业余时间）。</p>
+<hr />
+<h2 id="如何理解开源与商业的关系"><a class="header" href="#如何理解开源与商业的关系">如何理解开源与商业的关系？</a></h2>
+<img src="./img/coss-01.png" /><div style="break-before: page; page-break-before: always;"></div><h1 id="企业文化与开源文化"><a class="header" href="#企业文化与开源文化">企业文化与开源文化</a></h1>
+<h2 id="企业为开源采取的行动"><a class="header" href="#企业为开源采取的行动">企业为开源采取的行动</a></h2>
+<img src="./img/LFEOSG-03.png" />
+<hr />
+<h2 id="什么是企业文化"><a class="header" href="#什么是企业文化">什么是企业文化？</a></h2>
+<p><strong>组织文化（Organizational Culture）或者企业文化（Corporate Culture）</strong> 是指一个组织由其共有的价值观、仪式、符号、处事方式和信念等内化认同表现出其特有的行为模式。可以观察到组织人员的行为规律、工作的团体规范、组织信奉的主要价值、指导组织决策的哲学观念等等。</p>
+<p>在现代管理学里，这是一种企业主动通过一系列活动来塑造而成的文化形态，当这种文化被建立起来后，会成为塑造内部员工行为和关系的规范，是企业内部所有人共同遵循的价值观，对维系企业成员的统一性和凝聚力起很大的作用。</p>
+<hr />
+<h2 id="什么是开源文化"><a class="header" href="#什么是开源文化">什么是开源文化？</a></h2>
+<p>李建盛：《<a href="https://opensourceway.community/posts/opensource_culture/what-is-open-source-culture-when-people-said/">我们常说的开源文化，到底是什么？</a>》</p>
+<ul>
+<li>开放与共享</li>
+<li>代码风格、品味</li>
+<li>沟通与协作</li>
+<li>知识财产权的保护</li>
+<li>开源软件的商业逻辑</li>
+<li>价值观</li>
+</ul>
+<hr />
+<h2 id="开源社开源人宣言"><a class="header" href="#开源社开源人宣言">开源社：《开源人宣言》</a></h2>
+<ul>
+<li>分享（Sharing）：乐于分享是一切善举的开端</li>
+<li>开放（Openness）：公开透明是一切良好协作的基石</li>
+<li>平等（Equality）：平等是社区健康的保障</li>
+<li>协作（Collaboration）：开放式协作，逐步凝聚共识是社区繁荣的秘诀</li>
+<li>创造美好世界（Build a better world）：创造更加美好的世界，是开源的终极追求</li>
+</ul>
+<img src="./img/oss.png" />
+<hr />
+<h2 id="开源文化是否能够改变企业文化"><a class="header" href="#开源文化是否能够改变企业文化">开源文化，是否能够改变企业文化？</a></h2>
+<h3 id="或者说企业文化是否能够更多的接纳开源文化"><a class="header" href="#或者说企业文化是否能够更多的接纳开源文化">或者说：企业文化是否能够更多的接纳开源文化？</a></h3>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
