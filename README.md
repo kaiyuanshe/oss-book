@@ -1,6 +1,6 @@
 # 编译开源书籍
 
-本书的内容使用 `mdbook` 进行编写，并通过 开源社 发布。
+本书的内容使用 `mdbook` 进行编写，并通过[开源社](https://www.kaiyuanshe.cn)发布。
 
 ## 安装 rust
 
@@ -10,6 +10,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 访问 https://www.rust-lang.org/tools/install
 下载 rustup 并安装
 ```
+---
 
 ## 安装 mdbook
 
@@ -18,6 +19,8 @@ cargo install mdbook
 # 或
 cargo install --git https://github.com/rust-lang/mdBook.git mdbook
 ```
+
+---
 
 ## 编译开源书籍
 
