@@ -1284,7 +1284,120 @@
 <li>在发布阶段，会对发布之前的二进制软件包进行开源软件检测，确保已知漏洞应修尽修，只有满足发布安全要求门禁后才允许发布。</li>
 <li>在运维阶段，当漏洞感应系统感应到开源软件新漏洞时，会自动触发漏洞通知并启动自动排查机制，对公司所有产品执行开源软件排查，并通知受影响的产品进行漏洞修复。</li>
 </ol>
-<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="存量治理与增量治理"><a class="header" href="#存量治理与增量治理">存量治理与增量治理</a></h1>
+<h2 id="开源软件治理目标"><a class="header" href="#开源软件治理目标">开源软件治理目标</a></h2>
+<ol>
+<li>过程透明
+<ul>
+<li>目标：产品对开源软件的使用、修改过程有全面的记录，并通过中心仓透明管理</li>
+<li>价值：产品所使有开源软件在公司层面透明可视，作为所有管理动作的基础</li>
+</ul>
+</li>
+<li>优选引入
+<ul>
+<li>目标：持续引入优质开源软件</li>
+<li>分目标：引入开源软件数据对标社区，满足公司质量要求
+<ul>
+<li>价值：产品使用的开源软件数据来自社区，能够支撑产品履行开源义务、感知和修复开源漏洞</li>
+</ul>
+</li>
+<li>分目标：禁止引入衰退期软件，产品软件版本中同一开源软件版本原则上归一
+<ul>
+<li>价值：管控老版本使用，确保开源社区有充足的维护支持。管控产品软件中对同一软件的版本数量，降低漏洞跟踪与修复难度</li>
+</ul>
+</li>
+<li>分目标：在同等条件下，推荐产品使用质量更优的开源软件
+<ul>
+<li>价值：推动产品使用高质量开源软件，支撑产品竞争力与质量构建</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="开源软件治理目标-1"><a class="header" href="#开源软件治理目标-1">开源软件治理目标</a></h2>
+<ol start="3">
+<li>来源可信
+<ul>
+<li>目标：产品使用的所有开源软件来源可追溯，通过恶意软件扫描、哈希值/签名校验，告警清零</li>
+<li>分目标：产品使用的所有开源软件都可追溯至对应社区
+<ul>
+<li>价值：支撑产品在客户界面澄清产品软件成分来源，自证清白，并支持漏洞追溯跟踪</li>
+</ul>
+</li>
+<li>分目标：产品使用的所有开源软件都通过恶意软件扫描，告警清零
+<ul>
+<li>价值：恶意软件防护（防投毒），防止产品因恶意软件被攻击</li>
+</ul>
+</li>
+<li>分目标：中心仓中所有开源软件都通过哈希值和数字签名校验，告警清零
+<ul>
+<li>价值：产品使用开源软件实体存储源防篡改，防止公司内软件实体源被植入恶意代码</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="开源软件治理目标-2"><a class="header" href="#开源软件治理目标-2">开源软件治理目标</a></h2>
+<ol start="4">
+<li>合法合规
+<ul>
+<li>目标：产品使用开源及第三方软件过程遵从国家/地区法律，遵从开源License</li>
+<li>分目标：上报合规，遵从国家漏洞管理法律法规，发现的漏洞先上报至国家工业和信息化部网络安全威胁和漏洞信息共享平台
+<ul>
+<li>价值：防止因触犯国家法律导致的法务风险</li>
+</ul>
+</li>
+<li>分目标：产品按照集成使用的开源软件license规定，履行相应的义务，包括使用声明义务与代码开源义务。
+<ul>
+<li>价值：防止产品因违反开源License遭受开源维权诉讼</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>漏洞感知与修复
+<ul>
+<li>目标：产品生命周期内，开源漏洞小时级感知，分钟级定位，按SLO完成修复</li>
+<li>价值：支撑产品生命周期内安全漏洞及时修复，满足与客户界面的SLO要求</li>
+</ul>
+</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="自建开源治理工具"><a class="header" href="#自建开源治理工具">自建开源治理工具</a></h1>
+<h2 id="研发协作的集成化趋势"><a class="header" href="#研发协作的集成化趋势">研发协作的集成化趋势</a></h2>
+<ul>
+<li>个人工作面集成
+<ul>
+<li>从一堆小工具串联使用，到IDE（集成开发环境）</li>
+</ul>
+</li>
+<li>研发团队工具集成
+<ul>
+<li>从单兵作战到团队协作</li>
+<li>代码托管</li>
+<li>任务管理</li>
+<li>从测试到自动化测试</li>
+</ul>
+</li>
+<li>DevOps集成
+<ul>
+<li>从CI/CD，到DevSecOps</li>
+</ul>
+</li>
+<li>复用组件与集成
+<ul>
+<li>从代码级复用，到基于包管理工具的组件复用</li>
+</ul>
+</li>
+<li>企业级集成
+<ul>
+<li>应对系统性风险。比如：需要统一的开源漏洞与法务合规管理</li>
+<li>挖掘资产价值。比如：盘点现在使用的各种复用资产，减少多版本无序使用，减少生命周期维护压力</li>
+</ul>
+</li>
+</ul>
+<hr />
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
