@@ -44,44 +44,18 @@
 
 ## 外部驱动--开源和专利-GPL3.0
 
-* https://www.gnu.org/licenses/gpl-faq.html#v3PatentRetaliation
+[https://www.gnu.org/licenses/gpl-faq.html#v3PatentRetaliation](https://www.gnu.org/licenses/gpl-faq.html#v3PatentRetaliation)
 
-
-```
 第 11 节：专利
 GPLv3 提供以下两项专利承诺：
 1.禁止向下游分发对象主张专利权：**GPLv3 §10 明确规定不可施加附加条件来要求被许可方的直接分发对象接受专利许可或支付专利许可费。**此条款制定了有关 GPL 软件专利权用尽的统一规则，不考虑任何特定法律体系或区域法律下的国内专利法。
 2.贡献者版本中的专利许可：第 11 节指出，**任何向 GPL 软件贡献代码的人都需要将其中涉及的专利许可授予用户。**此规定旨在防止社区内的成员以激进方式向用户主张自己所修改的代码部分的专利权，即防止社区“内部人员叛变”。如果引入修改代码可导致修改后的软件构成侵犯贡献者专利权，贡献者会将原软件中的专利权许可授予所有后续用户、软件修改人或软件衍生作品的修改人，但不会授予代码修改部分中属于他人的专利权许可。此条款还规定，“贡献者版本”完成后获得的专利权也会在版本获得或完成时授予用户。如果某个拥有众多此类专利权的公司收购或聘用了程序修改者，则根据本条款，收购者已获得和后续获得的专利权也会自动传递。例如，微软公司收购诺基亚后，微软基于诺基亚曾修改的任何 GPLv3 程序的任何贡献者版本当前或以后获得的此类专利权都会自动向下游授予许可。微软收购诺基亚导致 GPLv3 程序的微软专利诉讼量整体下降这一现象至今未在行业内得到充分关注。
-```
-
----
-
-## 外部驱动--GDPR
-
-* Article 25: Data protection by design
-    * 建立政策支持合规
-    * 制定控制和政策来管理风险非常重要
-    * 具有自动化策略执行和集成等功能
-    * 使安全和法律团队能够支持GDPR合规性
-    * 防止易受攻击的开源组件进入
-    * 基于变量的结构政策
-    * 开发阶段，部署模型，漏洞严重程度，
-    * 组件版本和发布日期。
-* Article 32: Security of processing 
-    * 开发和运维的风险管理
-    * 限制应用程序安全风险的最佳方法是在开发阶段发现和管理开源漏洞
-    * 通过整合您的风险管理，使用您的开发和操作工具的解决方案
-    * 团队用来创建，测试和部署您的应用程序持续发现和洞察潜在的风险
-    * 由开发人员引入并提供操作的组件将他们所需的数据组合在一起以保护生产中的软件
-* Article 35: Data protection impact assessment 
-    * 生成开源组件清单后，您必须评估您的安全风险态势和分类软件漏洞。虽然公共消息来源像国家漏洞数据库（NVD）提供了高级摘要开源漏洞，影响指标和可利用性，
-    * 专用安全团队的专有数据源可以提供深入，策划的洞察力和补丁指导。仅在那之后
-    * 您可以优先考虑您的风险暴露提示采取补救措施，减少你的攻击面。
 
 ---
 
 ## 外部驱动--IPO,M&A尽调
 
-* https://ipo.org/wp-content/uploads/2013/03/opensourcewhitepaper.pdf
+[https://ipo.org/wp-content/uploads/2013/03/opensourcewhitepaper.pdf](https://ipo.org/wp-content/uploads/2013/03/opensourcewhitepaper.pdf)
+
 * Open source due diligence is a crucial part of your software due diligence. it is a time consuming process because most companies do not have the required visibility into their open source dependency usage.
 * Why OSS Diligence for M & A is Important Open Source Software (OSS) licenses1 are ubiquitous in nature and have become a very common way to license software. Given this ubiquitous nature, OSS licenses may impact the valuation of Intellectual Property (IP) transferred during the course of a Merger or Acquisition (M & A) transaction. The classic example of how OSS may impact this valuation is by reducing the value of IP that was otherwise considered to be licensable under a proprietary license, but for its licensing under an OSS license. For the purpose of this whitepaper, we will be discussing the impact of the GNU General Public License (GPL)2 on M & A transactions, and specifically the provision3 A. A Hypothetical of GPL that allows for the automatic licensing of downstream recipients of copyrighted technology licensed under GPL.
