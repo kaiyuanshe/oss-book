@@ -25,7 +25,7 @@ Permissive free software licence 是一种对软件的使用、修改、传播�
 
 ## 更加复杂的许可证知识
 
-![](./img/开源许可证内容框架.png)
+![](./img/license-framework.png)
 
 
 ---
@@ -52,8 +52,6 @@ Permissive free software licence 是一种对软件的使用、修改、传播�
 
 ---
 
-## 另一个参考资源：https://tldrlegal.com/
-
 * Apache V2
     * Can
         * Commercial Use
@@ -71,6 +69,21 @@ Permissive free software licence 是一种对软件的使用、修改、传播�
         * Include License
         * State Changes
         * Include Notice
+
+---
+
+* MIT License
+    * Can
+        * Commercial Use
+        * Modify
+        * Distribute
+        * Sublicense
+        * Private Use
+    * Cannot
+        * Hold Liable
+    * Must
+        * Include Copyright
+        * Include License
 
 ---
 
