@@ -42,7 +42,3 @@
   - [开源软件选型策略](./Open-Source-Software-Selection-Strategy.md)
   - [企业内部的开源使用责任矩阵](./Responsibility-matrix-for-open-source-usage-within-the-enterprise.md)
 - [软件生命周期管理](./Software-Lifecycle-Management.md)
-  - [开源软件的依赖关系](./Open-source-software-dependencies.md)
-  - [开源软件的版本与质量](./Open-source-software-versioning-and-quality.md)
-  - [企业内部软件版本生命周期管理](./In-house-software-version-lifecycle-management.md)
-  - [开源软件生命周期管理](./Open-Source-Software-Lifecycle-Management.md)
