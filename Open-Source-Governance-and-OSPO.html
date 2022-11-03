@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<html lang="zh" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>开源治理与OSPO - 开源社 —— 开源书籍</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="start.html"><strong aria-hidden="true">1.</strong> 开始</a></li><li class="chapter-item expanded "><a href="Getting-Started-with-Open-Source.html"><strong aria-hidden="true">2.</strong> 开源入门</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="The-History-of-Open-Source.html"><strong aria-hidden="true">2.1.</strong> 开源的前世今生</a></li><li class="chapter-item expanded "><a href="Open-Source-Definition-and-Related-Concepts.html"><strong aria-hidden="true">2.2.</strong> 开源定义与相关概念</a></li><li class="chapter-item expanded "><a href="The-state-of-open-source-ecological.html"><strong aria-hidden="true">2.3.</strong> 开源生态现状</a></li><li class="chapter-item expanded "><a href="National-open-source-policies-and-standards.html"><strong aria-hidden="true">2.4.</strong> 各国开源政策与标准</a></li><li class="chapter-item expanded "><a href="Open-source-Infrastructure.html"><strong aria-hidden="true">2.5.</strong> 开源基础设施</a></li></ol></li><li class="chapter-item expanded "><a href="Enterprise-and-Open-Source.html"><strong aria-hidden="true">3.</strong> 企业与开源</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Enterprise-use-of-open-source.html"><strong aria-hidden="true">3.1.</strong> 企业使用开源</a></li><li class="chapter-item expanded "><a href="Competition-and-cooperation-between-enterprises-based-on-open-source-software.html"><strong aria-hidden="true">3.2.</strong> 企业之间基于开源软件的竞争与合作</a></li><li class="chapter-item expanded "><a href="Competition-and-cooperation-between-enterprises-and-the-open-source-world.html"><strong aria-hidden="true">3.3.</strong> 企业与开源世界之间的竞争与合作</a></li><li class="chapter-item expanded "><a href="Corporate-culture-and-open-source-culture.html"><strong aria-hidden="true">3.4.</strong> 企业文化与开源文化</a></li></ol></li><li class="chapter-item expanded "><a href="Open-Source-Governance-and-Management.html"><strong aria-hidden="true">4.</strong> 开源治理和管理</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Enterprise-from-Open-Source.html"><strong aria-hidden="true">4.1.</strong> 从开源看企业</a></li><li class="chapter-item expanded "><a href="Open-Source-from-an-Enterprise-Perspective.html"><strong aria-hidden="true">4.2.</strong> 从企业看开源</a></li><li class="chapter-item expanded "><a href="Open-Source-Governance-and-OSPO.html" class="active"><strong aria-hidden="true">4.3.</strong> 开源治理与OSPO</a></li><li class="chapter-item expanded "><a href="Introduction-to-open-source-management-tools.html"><strong aria-hidden="true">4.4.</strong> 开源管理工具集介绍</a></li></ol></li><li class="chapter-item expanded "><a href="Open-Source-Security-Risks.html"><strong aria-hidden="true">5.</strong> 开源安全风险</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Common-Security-Risks.html"><strong aria-hidden="true">5.1.</strong> 常见安全风险</a></li><li class="chapter-item expanded "><a href="Risk-scenarios-and-preventive-measures.html"><strong aria-hidden="true">5.2.</strong> 风险场景与防范对策</a></li></ol></li><li class="chapter-item expanded "><a href="Open-Source-Legal-Risk.html"><strong aria-hidden="true">6.</strong> 开源法务风险</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Open-Source-License.html"><strong aria-hidden="true">6.1.</strong> 开源许可证对比</a></li><li class="chapter-item expanded "><a href="Open-source-use-maintenance-and-distribution-scenarios.html"><strong aria-hidden="true">6.2.</strong> 开源使用、维护与分发等场景</a></li><li class="chapter-item expanded "><a href="Open-Source-Legal-Compliance-Practice.html"><strong aria-hidden="true">6.3.</strong> 开源法务合规实践</a></li></ol></li><li class="chapter-item expanded "><a href="Open-Source-Governance-System.html"><strong aria-hidden="true">7.</strong> 开源治理体系</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Rule-system.html"><strong aria-hidden="true">7.1.</strong> 规则体系</a></li><li class="chapter-item expanded "><a href="Operational-work-of-internal-governance.html"><strong aria-hidden="true">7.2.</strong> 内部治理的运营工作</a></li><li class="chapter-item expanded "><a href="Key-Difficulties-in-Stock-Management.html"><strong aria-hidden="true">7.3.</strong> 存量治理的关键难点</a></li></ol></li><li class="chapter-item expanded "><a href="Inner-source-operation.html"><strong aria-hidden="true">8.</strong> 企业内部开源经营</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Value-and-Benefits.html"><strong aria-hidden="true">8.1.</strong> 价值与收益</a></li><li class="chapter-item expanded "><a href="Corporate-Cases.html"><strong aria-hidden="true">8.2.</strong> 企业案例</a></li></ol></li><li class="chapter-item expanded "><a href="Self-built-open-source-governance-tools.html"><strong aria-hidden="true">9.</strong> 自建开源治理工具</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Tools-Architecture.html"><strong aria-hidden="true">9.1.</strong> 工具架构</a></li><li class="chapter-item expanded "><a href="Internal-open-ecology-of-tools.html"><strong aria-hidden="true">9.2.</strong> 工具的内部开放生态</a></li><li class="chapter-item expanded "><a href="Open-Source-Metadata-Standards-Explained.html"><strong aria-hidden="true">9.3.</strong> 开源元数据标准解读</a></li><li class="chapter-item expanded "><a href="Tools-Evolution-Strategy.html"><strong aria-hidden="true">9.4.</strong> 工具演进策略</a></li></ol></li><li class="chapter-item expanded "><a href="Open-Source-Technology-Selection.html"><strong aria-hidden="true">10.</strong> 开源技术选型</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Open-Source-Software-Evaluation-Model.html"><strong aria-hidden="true">10.1.</strong> 开源软件评估模型</a></li><li class="chapter-item expanded "><a href="Open-Source-Software-Selection-Strategy.html"><strong aria-hidden="true">10.2.</strong> 开源软件选型策略</a></li><li class="chapter-item expanded "><a href="Responsibility-matrix-for-open-source-usage-within-the-enterprise.html"><strong aria-hidden="true">10.3.</strong> 企业内部的开源使用责任矩阵</a></li></ol></li><li class="chapter-item expanded "><a href="Software-Lifecycle-Management.html"><strong aria-hidden="true">11.</strong> 软件生命周期管理</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">开源社 —— 开源书籍</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="开源治理与ospo"><a class="header" href="#开源治理与ospo">开源治理与OSPO</a></h1>
+<h2 id="企业为什么要制定开源战略规划"><a class="header" href="#企业为什么要制定开源战略规划">企业为什么要制定开源战略规划？</a></h2>
+<p><img src="./img/OSS-Strategy.png" alt="" /></p>
+<hr />
+<h3 id="企业开源战略四大关注点"><a class="header" href="#企业开源战略四大关注点">企业开源战略四大关注点</a></h3>
+<p><img src="./img/4-major-concerns.png" alt="" /></p>
+<ul>
+<li>寻求参与的开源项目</li>
+<li>希望密切联系的相关开源项目社区</li>
+<li>开源治理的有效性</li>
+<li>企业文化的开放性</li>
+</ul>
+<hr />
+<h2 id="实施企业开源治理的基础架构"><a class="header" href="#实施企业开源治理的基础架构">实施企业开源治理的基础架构</a></h2>
+<p><img src="./img/Open-Source-Governance-Infrastructure.png" alt="" /></p>
+<p>开源战略需要构建基础架构来支持开源工程工作。
+基础架构需要支持的四个关键支柱：</p>
+<ul>
+<li>社区参与</li>
+<li>开源贡献</li>
+<li>开源合规性</li>
+<li>开源消费</li>
+</ul>
+<p>开源社区是唯一的项目治理平台，因为它涉及公司与公司所涉及的特定开源项目之间在使用、合规性和贡献方面的所有交互。 </p>
+<hr />
+<h2 id="开源消费与合规的基础设施"><a class="header" href="#开源消费与合规的基础设施">开源消费与合规的基础设施</a></h2>
+<p><img src="./img/Open-Source-Governance-Infrastructure-1.png" alt="" /></p>
+<hr />
+<h2 id="开源贡献基础设施"><a class="header" href="#开源贡献基础设施">开源贡献基础设施</a></h2>
+<p><img src="./img/Open-Source-Governance-Infrastructure-2.png" alt="" /></p>
+<hr />
+<h2 id="设立-ospo建立组织层面开源战略的抓手"><a class="header" href="#设立-ospo建立组织层面开源战略的抓手">设立 OSPO——建立组织层面开源战略的抓手</a></h2>
+<p>OSPO（Open Source Program Office）即开源项目办公室，最早成立的公司为谷歌，成立于 2004 。此后，微软、Adobe、Netflix、Intel 等科技公司纷纷跟进成立企业 OSPO。OSPO 是企业实施开源战略的有效抓手，2013 年起中国企业也陆续开始组织建立自己的开源项目办公室。</p>
+<p><img src="./img/OSPO.png" alt="" /></p>
+<hr />
+<h2 id="企业开源的组织架构设置开源项目办公室"><a class="header" href="#企业开源的组织架构设置开源项目办公室">企业开源的组织架构设置：开源项目办公室</a></h2>
+<h3 id="开源项目办公室是什么"><a class="header" href="#开源项目办公室是什么">开源项目办公室是什么？</a></h3>
+<p>在公司内部支持、培养、共享、解释和发展开源的组织架构；企业可以明确地建立和执行开源战略，为他们的领导者、开发人员、营销人员和其他员工提供他们需要的工具，使开源在运营中取得成功。</p>
+<h3 id="为什么需要开源项目办公室"><a class="header" href="#为什么需要开源项目办公室">为什么需要开源项目办公室？</a></h3>
+<ul>
+<li>开源是一项战略优势，需要协调，集中和清晰的沟通，没有管理过程将会产生混乱和风险;</li>
+<li>为了真正从开源中受益，需要透明和协作的文化。</li>
+</ul>
+<h3 id="开源项目办公室的职责"><a class="header" href="#开源项目办公室的职责">开源项目办公室的职责</a></h3>
+<ul>
+<li>在公司内外沟通开源战略，监督战略的执行；</li>
+<li>在商业产品和服务中促进开源的有效使用；</li>
+<li>确保高质量和频繁地向开源社区发布代码；</li>
+<li>与开发人员交流，使公司做出有效开源贡献；</li>
+<li>在组织中培养开源文化；</li>
+<li>维护开源许可的遵从性审查和监督。</li>
+</ul>
+<h3 id="开源项目办公室架构"><a class="header" href="#开源项目办公室架构">开源项目办公室架构</a></h3>
+<ul>
+<li>取决于公司的主要业务和开源策略，它们可以位于首席技术官办公室等地方：</li>
+<li>法律：开发人员可以就出现的问题与法律团队紧密合作。</li>
+<li>工程：直接将精力集中在使开发人员的工作更加有效和富有成效上；</li>
+<li>开发者关系/营销：使用开源来收集旨在销售使用开源构建的产品的销售线索。</li>
+</ul>
+<p><img src="./img/OSPO-2.png" alt="" /></p>
+<hr />
+<h2 id="企业实施开源战略的策略与回报"><a class="header" href="#企业实施开源战略的策略与回报">企业实施开源战略的策略与回报</a></h2>
+<h3 id="5c-策略原则"><a class="header" href="#5c-策略原则">5C 策略原则：</a></h3>
+<ul>
+<li>消费（Consumption）</li>
+<li>合规性（Compliance）</li>
+<li>社区（Community）</li>
+<li>贡献（Contribution）</li>
+<li>竞争（Competition）</li>
+</ul>
+<h3 id="开源项目办公室收益"><a class="header" href="#开源项目办公室收益">开源项目办公室收益</a></h3>
+<ul>
+<li>提高开发人员的敏捷性/速度 </li>
+<li>更好更快地遵守许可证 </li>
+<li>在开源之上建立差异化</li>
+</ul>
+<h3 id="开源作为营销策略"><a class="header" href="#开源作为营销策略">开源作为营销策略</a></h3>
+<p>开源不仅仅是对源代码和口碑的共享，也是最佳的产品营销策略</p>
+<h3 id="开源的回报是获得竞争优势"><a class="header" href="#开源的回报是获得竞争优势">开源的回报是获得竞争优势</a></h3>
+<p>哈佛商学院（Harvard Business School）的近期研究表明，开源贡献公司从开源中获取的生产价值比不回馈开源的公司高出100％。</p>
+<p><img src="./img/OSPO-3.png" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Open-Source-from-an-Enterprise-Perspective.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="Introduction-to-open-source-management-tools.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Open-Source-from-an-Enterprise-Perspective.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="Introduction-to-open-source-management-tools.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
