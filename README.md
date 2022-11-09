@@ -1,3 +1,5 @@
+<img src="./src/img/CC-BY-SA_icon.jpg" width="160px" />
+
 # 编译开源书籍
 
 本书的内容使用 `mdbook` 进行编写，并通过[开源社](https://www.kaiyuanshe.cn)发布。
