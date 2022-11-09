@@ -139,12 +139,15 @@
 <p>常见的开源许可证主要有 Apache、MIT、BSD、GPL、LGPL、MPL、SSPL 等，可以大致分为两大类：宽松自由软件许可协议（“Permissive free software licence”）和著佐权许可证（“copyleft license”）。</p>
 <p>Permissive free software licence 是一种对软件的使用、修改、传播等方式采用最低限制的自由软件许可协议条款类型。这种类型的软件许可协议将不保证原作品的派生作品会继续保持与原作品完全相同的相关限制条件，从而为原作品的自由使用、修改和传播等提供更大的空间。</p>
 <p>而 Copyleft License 是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。</p>
+<hr />
+<h2 id="主要开源许可证介绍-1"><a class="header" href="#主要开源许可证介绍-1">主要开源许可证介绍</a></h2>
 <p>两者最大的差别在于：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而 Permissive free software licence 不要求公开源代码（衍生软件可以变为专有软件）。</p>
 <p>其中，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（copyleft ）许可证，LGPL、MPL 是弱著佐权（copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。</p>
 <hr />
 <h2 id="选择许可证的简单逻辑"><a class="header" href="#选择许可证的简单逻辑">选择许可证的简单逻辑</a></h2>
 <p><img src="https://www.ruanyifeng.com/blogimg/asset/201105/bg2011050101.png" alt="" /></p>
 <p>来源：<a href="https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html">https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html</a></p>
+<hr />
 <p>补充说明：</p>
 <ul>
 <li>无论哪一个许可证 都不默认能用作者名字促销，除非是明示可以使用 </li>
@@ -264,6 +267,10 @@
 <div class="table-wrapper"><table><thead><tr><th>许可证类型</th><th>BSD, MIT，Apache1.1， Artistic1.0</th><th>Apache v2, Artistic v 2</th><th>MPL v1.1，CDDLv1 ，MPLv2，EPLv1</th><th>GPLv2, LGPLv2, AGPLv2</th><th>GPLv3, LGPLv3, AGPLv3</th></tr></thead><tbody>
 <tr><td>用户对下游用户的专利许可范围</td><td>无规定</td><td>主动贡献；主动贡献与原始软件的结合(结合侵权)</td><td>修改部分</td><td>主文说明不得对下游用户获得的权利进行限制</td><td>分发的GPL软件</td></tr>
 <tr><td>软件所有者对用户的专利许可范围</td><td>无规定</td><td>原始软件</td><td>原始软件</td><td>仅序言说专利须免费许可</td><td>原始软件</td></tr>
+</tbody></table>
+</div>
+<h2 id="专利相关规定-1"><a class="header" href="#专利相关规定-1">专利相关规定</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>许可证类型</th><th>BSD, MIT，Apache1.1， Artistic1.0</th><th>Apache v2, Artistic v 2</th><th>MPL v1.1，CDDLv1 ，MPLv2，EPLv1</th><th>GPLv2, LGPLv2, AGPLv2</th><th>GPLv3, LGPLv3, AGPLv3</th></tr></thead><tbody>
 <tr><td>不诉限制</td><td>无规定</td><td>用户不得就该软件专利侵权（含交叉诉和反诉）否则本软件下的专利许可终止</td><td>用户不得起诉任何人该软件专利侵权，否则所有许可终止，不同许可证对交叉诉和反诉的排除不同。</td><td>无</td><td>用户不得起诉该软件专利侵权，否则所有许可终止。</td></tr>
 <tr><td>对获得第三方许可的限制</td><td>无规定</td><td>无</td><td>无</td><td>要获得无限制的给所有开源软件用户的软件专利许可。但通过对集成软件的产品获得专利许可可规避</td><td>要获得无限制的给所有开源软件用户的专利许可。通过集成软件的硬件获取对自己的专利许可可规避，但为客户买前述专利许可则不能规避。</td></tr>
 <tr><td>对应软件（举例）</td><td>Allseen</td><td>OPNFV；OpenStack</td><td>opendaylight</td><td>Linux</td><td>最新版本的GCC编译器</td></tr>

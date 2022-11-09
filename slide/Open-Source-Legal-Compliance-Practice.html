@@ -29,13 +29,14 @@
 * 法院认为：A 自己没有遵循开源协议，有错在先。有侵权错误的 A，去告有侵权错误的 B，虽然是侵权对象不同，但都是知识产权侵权，法院如果判 B 侵权，就是偏袒了 A。所以法院不支持 A 的控诉。
     * 但是：B 公司的另一个小模块“预览程序”，没有被GPL“传染”，因此确认：被告的侵权获利为XXX万元。法院决定3倍惩罚，判B赔偿3倍的XXX万元。
 
+</script></section><section  data-markdown><script type="text/template">
 ### A 公司的失误有哪些？
 
 1. A没有充分注意到开源许可证
 2. A没有认真考虑过许可证合规
 3. A没有及时跟进zip库这个开源项目，原来早在2016年5月份，zip库就改为MIT了。
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## 开源许可证兼容性指南
 
 ### 开源许可证兼容性的定义
@@ -49,6 +50,7 @@
 * 合并/修改代码：从要组合的代码中取出整体/部分代码，修改或不修改都可以，然后把它添加到你的代码中构成一个作品。
 * 使用库：没有直接复制代码，在编译或运行时通过链接、导入或其他典型的机制（例如静态与动态链接）把要组合的开源代码绑定在一起。
 
+</script></section><section data-markdown><script type="text/template">
 备注：（下方内容可以对应到兼容性列表中有【1】【2】【3】的项）
 * 【1】LGPLv2.1 允许你把代码重新按照 GPLv2 以后的 GPL 许可证发布。所以如果你可以把 LGPL 的代码按照合适的 GPL 版本发布，那么你就可以组合两方代码。
 * 【2】MPL的代码和GPL系列的代码组合的结果是，MPL协议的代码遵循MPL协议，GPL系列的代码遵循GPL系列协议，所以原来按照 MPL 发布的那些文件还是可以使用 MPL 条款的，组合而成的作品整体上可以按照GPL系列的许可证发布。
@@ -56,25 +58,25 @@
 * LGPL+与GPL+代表许可证授予用户将许可证升级到未来版本的权利，例如LGPLv2.1+意味着用户可以把许可证升级到LGPL v2.1之后的版本。
 * 下方的表格第一行展示了你的项目要使用的许可证，左边第一列是你要组合的软件带有的开源许可证，他们之间的交叉处显示了你是否可以组合他们。
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## 合并/修改代码的许可证兼容性列表
 
-![](./img/License-Compatibility-2.png)
+<img src="./img/License-Compatibility-2.png" />
 
 </script></section><section  data-markdown><script type="text/template">
 ## 使用库的兼容性列表
 
-![](./img/License-Compatibility-3.png)
+<img src="./img/License-Compatibility-3.png" />
 
---
-
+</script></section><section  data-markdown><script type="text/template">
 ## 软件分发场景判断
 
-![](./img/License-Compatibility-4.png)
+<img src="./img/License-Compatibility-4.png" />
 
 首先，我们要先判断我们的组合程序属于自用还是分发。如果组合程序属于自用，那么我们就可以无视开源许可证的规定与要求；如果组合程序属于分发，那么我们可以继续查看下图。
 
-![](./img/License-Compatibility-5.png)
+</script></section><section  data-markdown><script type="text/template">
+<img src="./img/License-Compatibility-5.png" />
 
 当组合具有传染性许可证的开源代码时，用户会有不想使用传染性许可证或闭源发布作品的需求，那么我们就可以通过一些技术隔离方法来实现自有代码不被传染性代码传染。 
 
@@ -89,7 +91,7 @@
 
 ​	AGPL，GPL许可证：把AGPL，GPL许可证下的代码和其他模块静态或动态连接在一起就是在基于GPL作品合成一个作品。因此，GPL、AGPL许可证的条款和条件涵盖整个组合作品，你必须分发所有源代码。
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## 强隔离
 
 ### 聚合体
@@ -98,6 +100,7 @@
 
 ​	如何区分是两个独立的程序，还是一个程序的两个部分呢？这本质上是个法律问题，会根据不同国家、不同地域的法律规定产生变化，但又无法脱离技术。从技术方面来看，独立程序的标准既依赖于通信机制，也依赖于通信语义（交换了什么样的信息）。
 
+</script></section><section data-markdown><script type="text/template">
 进程间通信的方式有很多，例如：
 
 - 消息传递（管道、FIFO、消息队列）
@@ -108,7 +111,7 @@
 
 ​    如果两个模块都包含在一个可执行文件里，或者两个模块运行时共享内存，那么它们一定是同一个程序。反过来，管道、sockets通信和命令行参数通常都是两个独立程序的通信机制。但是如果两方的通信语义非常密切，共享内部数据结构，那么它们也被会认为是一个大程序的两个组合部分。
 
-</script></section><section  data-markdown><script type="text/template">
+</script></section></section><section  data-markdown><script type="text/template">
 ## 保密协议开发GPL修改版
 
 ​	GPL是不允许开发者使用保密协议发行软件的。也就是意味着如果有第三方从你这里获得了GPL代码的衍生品，他就有权发布该产品，你不能使用限制条款（例如NDA协议）来限制该产品发布。但是开发者可以签署一个“代表客户”开发GPL修改版的合同，规定只有在客户同意时才能发布你的修改。GPL许可证允许这样做的原因是GPL的代码并没有按照保密协议发布，没有在发布时添加任何限制条款。此时，你可以将你的修改按照GPL许可证发布给你的客户，但是只有在客户同意时才能把代码发布给第三方。</script></section></div>
