@@ -11,7 +11,7 @@
     * 开源组件在供应链中的监测与预警
     * 开源组件供应链的重构与优化
 
-![](./img/OSS-supply-chain.png)
+<img src="./img/OSS-supply-chain.png" />
 
 ---
 
@@ -71,79 +71,79 @@
 
 ---
 
-![](./img/OSS-supply-chain-2.png)
+<img src="./img/OSS-supply-chain-2.png" />
 
 ---
 
 ## 开发者行为数据是一个极好的切入点
 
-![](./img/OSS-supply-chain-3.png)
+<img src="./img/OSS-supply-chain-3.png" />
 
 ---
 
-![](./img/OSS-supply-chain-4.png)
+<img src="./img/OSS-supply-chain-4.png" />
 
 ---
 
-![](./img/OSS-supply-chain-5.png)
+<img src="./img/OSS-supply-chain-5.png" />
 
 ---
 
-![](./img/OSS-supply-chain-6.png)
+<img src="./img/OSS-supply-chain-6.png" />
 
 ---
 
-![](./img/OSS-supply-chain-7.png)
+<img src="./img/OSS-supply-chain-7.png" />
 
 ---
 
 ## 开源生态数据类目体系
 
-![](./img/OSS-supply-chain-8.png)
+<img src="./img/OSS-supply-chain-8.png" />
 
 ---
 
 ## 选型：开源技术的数字化洞察
 
-![](./img/OSS-supply-chain-9.png)
+<img src="./img/OSS-supply-chain-9.png" />
 
 ---
 
 ## 开源基础软件 —— 数据库
 
-![](./img/OSS-supply-chain-10.png)
+<img src="./img/OSS-supply-chain-10.png" />
 
 ---
 
 ## 关系型数据库
 
-![](./img/OSS-supply-chain-11.png)
+<img src="./img/OSS-supply-chain-11.png" />
 
 ---
 
-![](./img/OSS-supply-chain-12.png)
+<img src="./img/OSS-supply-chain-12.png" />
 
 ---
 
 ## 数据库领域的开源象限
 
-![](./img/OSS-supply-chain-13.png)
+<img src="./img/OSS-supply-chain-13.png" />
 
 ---
 
 ## 开源科技的数字化洞察 —— 云原生
 
-![](./img/OSS-supply-chain-14.png)
+<img src="./img/OSS-supply-chain-14.png" />
 
 ---
 
-![](./img/OSS-supply-chain-15.png)
+<img src="./img/OSS-supply-chain-15.png" />
 
 ---
 
 ## 案例分析：VSCode
 
-![](./img/OSS-supply-chain-16.png)
+<img src="./img/OSS-supply-chain-16.png" />
 
 ---
 
@@ -172,7 +172,7 @@
 
 ---
 
-![](./img/OSS-supply-chain-17.png)
+<img src="./img/OSS-supply-chain-17.png" />
 
 ---
 

@@ -61,21 +61,21 @@
 
 ---
 
-![](./img/sbom.png)
+<img src="./img/sbom.png" />
 
 ---
 
-![](./img/lifecycle.png)
+<img src="./img/lifecycle.png" />
 
 ---
 
-![](./img/lifecycle-2.png)
+<img src="./img/lifecycle-2.png" />
 
 ---
 
-![](./img/lifecycle-3.png)
+<img src="./img/lifecycle-3.png" />
 
 ---
 
-![](./img/lifecycle-4.png)
+<img src="./img/lifecycle-4.png" />
 
