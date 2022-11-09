@@ -8,6 +8,10 @@ Permissive free software licence 是一种对软件的使用、修改、传播�
 
 而 Copyleft License 是在有限空间内的自由使用、修改和传播，且不得违背原作品的限制条款。如果一款软件使用 Copyleft 类型许可协议规定软件不得用于商业目的，且不得闭源，那么后续的衍生子软件也必须得遵循该条款。
 
+------
+
+## 主要开源许可证介绍
+
 两者最大的差别在于：在软件被修改并再发行时， Copyleft License 仍然强制要求公开源代码（衍生软件需要开源），而 Permissive free software licence 不要求公开源代码（衍生软件可以变为专有软件）。
 
 其中，Apache、MIT、BSD 都是宽松许可证，GPL 是典型的强著佐权（copyleft ）许可证，LGPL、MPL 是弱著佐权（copyleft ）许可证。SSPL 则是近年来 MongoDB 创建的一个新许可证，存在较大争议，开放源代码促进会 OSI 甚至认为 SSPL 就不是开源许可协议。
@@ -19,6 +23,8 @@ Permissive free software licence 是一种对软件的使用、修改、传播�
 ![](https://www.ruanyifeng.com/blogimg/asset/201105/bg2011050101.png)
 
 来源：[https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html](https://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html)
+
+------
 
 补充说明：
 
@@ -115,6 +121,11 @@ Permissive free software licence 是一种对软件的使用、修改、传播�
 |---|---|---|---|---|---|
 |用户对下游用户的专利许可范围|无规定|主动贡献；主动贡献与原始软件的结合(结合侵权)|修改部分|主文说明不得对下游用户获得的权利进行限制|分发的GPL软件|
 |软件所有者对用户的专利许可范围|无规定|原始软件|原始软件|仅序言说专利须免费许可|原始软件|
+
+## 专利相关规定
+
+|许可证类型|BSD, MIT，Apache1.1， Artistic1.0|Apache v2, Artistic v 2|MPL v1.1，CDDLv1 ，MPLv2，EPLv1|GPLv2, LGPLv2, AGPLv2|GPLv3, LGPLv3, AGPLv3|
+|---|---|---|---|---|---|
 |不诉限制|无规定|用户不得就该软件专利侵权（含交叉诉和反诉）否则本软件下的专利许可终止|用户不得起诉任何人该软件专利侵权，否则所有许可终止，不同许可证对交叉诉和反诉的排除不同。|无|用户不得起诉该软件专利侵权，否则所有许可终止。|
 |对获得第三方许可的限制|无规定|无|无|要获得无限制的给所有开源软件用户的软件专利许可。但通过对集成软件的产品获得专利许可可规避|要获得无限制的给所有开源软件用户的专利许可。通过集成软件的硬件获取对自己的专利许可可规避，但为客户买前述专利许可则不能规避。|
 |对应软件（举例）|Allseen|OPNFV；OpenStack|opendaylight|Linux|最新版本的GCC编译器|

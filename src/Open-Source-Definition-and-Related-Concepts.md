@@ -113,4 +113,4 @@
 
 ---
 
-![](./img/metadata.png)
+<img src="./img/metadata.png" />
