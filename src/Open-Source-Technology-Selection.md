@@ -53,6 +53,8 @@
 * 社区持续发展指数
 * ……
 
+---
+
 ## 方法：基于开源测量学的开源生态分析
 
 * 宏观洞察：
@@ -81,11 +83,11 @@
 
 ---
 
-<img src="./img/OSS-supply-chain-4.png" />
+<img src="./img/OSS-supply-chain-4.png" height="700px" />
 
 ---
 
-<img src="./img/OSS-supply-chain-5.png" />
+<img src="./img/OSS-supply-chain-5.png" height="700px" />
 
 ---
 
