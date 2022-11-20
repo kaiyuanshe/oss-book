@@ -7,3 +7,12 @@ title = "开源社 —— 开源书籍"
 
 [build]
 create-missing = false
+
+[preprocessor.echarts]
+
+[output.html]
+additional-js = ["assets/echarts.min.js"]
+
+[output.html.fold]
+enable = true
+level = 0

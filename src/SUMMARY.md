@@ -38,3 +38,4 @@
   - [工具演进策略](./Tools-Evolution-Strategy.md)
 - [开源技术选型](./Open-Source-Technology-Selection.md)
 - [软件生命周期管理](./Software-Lifecycle-Management.md)
+- [test](./test.md)

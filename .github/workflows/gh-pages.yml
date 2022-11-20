@@ -19,6 +19,8 @@ jobs:
         with:
           mdbook-version: 'latest'
 
+      - run: cargo install mdbook-echarts
+
       - run: mdbook build
       
       - run: cp book.js ./book/book.js
