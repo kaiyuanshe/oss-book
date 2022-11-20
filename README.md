@@ -18,8 +18,10 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ```bash
 cargo install mdbook
+cargo install mdbook-echarts
 # 或
 cargo install --git https://github.com/rust-lang/mdBook.git mdbook
+cargo install --git https://github.com/zhuangbiaowei/mdbook-echarts mdbook-echarts
 ```
 
 ---
