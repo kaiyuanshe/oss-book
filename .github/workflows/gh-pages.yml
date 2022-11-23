@@ -30,7 +30,7 @@ jobs:
         
       - run: npm install -g reveal-md
       
-      - run: reveal-md src/ --separator "^---\n" --vertical-separator "^------\n" --static ./book/slide
+      - run: reveal-md src/ --preprocessor preproc.js --separator "^---\n" --vertical-separator "^------\n" --static ./book/slide
 
       - run: cp black.css ./book/slide/dist/theme/black.css
 
