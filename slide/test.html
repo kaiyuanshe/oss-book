@@ -15,8 +15,13 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template">```echarts
-{
+      <div class="slides"><section  data-markdown><script type="text/template"><div id="chart_20819" style="width: 600px;height:400px;"></div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var mychart_20819 = echarts.init(document.getElementById('chart_20819'));
+                    var option = {
+
+
   title: {
     text: '圆环图的例子',
     left: 'center',
@@ -43,11 +48,18 @@
     }
   ]
 };
-```
+mychart_20819.setOption(option);
+                });
+                __SCRIPT_END__
+
+</script></section><section  data-markdown><script type="text/template">
+<div id="chart_868760" style="width: 600px;height:400px;"></div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var mychart_868760 = echarts.init(document.getElementById('chart_868760'));
+                    var option = {
 
 
-```echarts
-{
   xAxis: {
     data: ['A', 'B', 'C', 'D', 'E']
   },
@@ -65,7 +77,9 @@
     }
   ]
 };
-```</script></section></div>
+mychart_868760.setOption(option);
+                });
+                __SCRIPT_END__</script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
