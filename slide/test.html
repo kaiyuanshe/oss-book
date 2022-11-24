@@ -16,43 +16,42 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown>
+      <div class="slides">
+        <section  data-markdown>
         <div id="chart_20819" style="width: 600px;height:400px;"></div>
-                <script>
+           <script>
                 document.addEventListener('DOMContentLoaded', function() {
                     var mychart_20819 = echarts.init(document.getElementById('chart_20819'));
                     var option = {
-
-
-  title: {
-    text: '圆环图的例子',
-    left: 'center',
-    top: 'center'
-  },
-  series: [
-    {
-      type: 'pie',
-      data: [
-        {
-          value: 335,
-          name: 'A'
-        },
-        {
-          value: 234,
-          name: 'B'
-        },
-        {
-          value: 1548,
-          name: 'C'
-        }
-      ],
-      radius: ['40%', '70%']
-    }
-  ]
-};
-mychart_20819.setOption(option);
+                      title: {
+                        text: '圆环图的例子',
+                        left: 'center',
+                        top: 'center'
+                      },
+                      series: [
+                        {
+                          type: 'pie',
+                          data: [
+                            {
+                              value: 335,
+                              name: 'A'
+                            },
+                            {
+                              value: 234,
+                              name: 'B'
+                            },
+                            {
+                              value: 1548,
+                              name: 'C'
+                            }
+                          ],
+                          radius: ['40%', '70%']
+                        }
+                      ]
+                    };
+                  mychart_20819.setOption(option);
                 });
-</script>
+           </script>
 </section>
         
 <section  data-markdown>
