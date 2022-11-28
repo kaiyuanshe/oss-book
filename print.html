@@ -2595,10 +2595,10 @@ GPLv3 提供以下两项专利承诺：
 <hr />
 <img src="./img/lifecycle-4.png" />
 <div style="break-before: page; page-break-before: always;"></div><div>
-<div id="chart_2a5b16bd" style="width: 600px;height:400px;"></div>
+<div id="chart_b6653e0c" style="width: 600px;height:400px;"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-var mychart_2a5b16bd = echarts.init(document.getElementById('chart_2a5b16bd'));
+var mychart_b6653e0c = echarts.init(document.getElementById('chart_b6653e0c'));
 var option = {
   title: {
     text: '圆环图的例子',
@@ -2626,16 +2626,16 @@ var option = {
     }
   ]
 };
-mychart_2a5b16bd.setOption(option);
+mychart_b6653e0c.setOption(option);
 });
 </script>
 </div>
 <hr />
 <div>
-<div id="chart_6e4a2032" style="width: 600px;height:400px;"></div>
+<div id="chart_3fecd927" style="width: 600px;height:400px;"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-var mychart_6e4a2032 = echarts.init(document.getElementById('chart_6e4a2032'));
+var mychart_3fecd927 = echarts.init(document.getElementById('chart_3fecd927'));
 var option = {
   xAxis: {
     data: ['A', 'B', 'C', 'D', 'E']
@@ -2654,53 +2654,51 @@ var option = {
     }
   ]
 };
-mychart_6e4a2032.setOption(option);
+mychart_3fecd927.setOption(option);
 });
 </script>
 </div>
 <hr />
 <div>
-<div id="chart_2168f6d3" style="width: 600px;height:400px;"></div>
+<div id="chart_0dab0f30" style="width: 600px;height:400px;"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-var mychart_2168f6d3 = echarts.init(document.getElementById('chart_2168f6d3'));
+var mychart_0dab0f30 = echarts.init(document.getElementById('chart_0dab0f30'));
 var option = {
-  tooltip: {
-    trigger: 'item',
-    triggerOn: 'mousemove'
-  },
+  xAxis: {},
+  yAxis: {},
   series: [
     {
-      type: 'tree',
-      data: [data],
-      top: '1%',
-      left: '7%',
-      bottom: '1%',
-      right: '20%',
-      symbolSize: 7,
-      label: {
-        position: 'left',
-        verticalAlign: 'middle',
-        align: 'right',
-        fontSize: 9
-      },
-      leaves: {
-        label: {
-          position: 'right',
-          verticalAlign: 'middle',
-          align: 'left'
-        }
-      },
-      emphasis: {
-        focus: 'descendant'
-      },
-      expandAndCollapse: true,
-      animationDuration: 550,
-      animationDurationUpdate: 750
+      symbolSize: 20,
+      data: [
+        [10.0, 8.04],
+        [8.07, 6.95],
+        [13.0, 7.58],
+        [9.05, 8.81],
+        [11.0, 8.33],
+        [14.0, 7.66],
+        [13.4, 6.81],
+        [10.0, 6.33],
+        [14.0, 8.96],
+        [12.5, 6.82],
+        [9.15, 7.2],
+        [11.5, 7.2],
+        [3.03, 4.23],
+        [12.2, 7.83],
+        [2.02, 4.47],
+        [1.05, 3.33],
+        [4.05, 4.96],
+        [6.03, 7.24],
+        [12.0, 6.26],
+        [12.0, 8.84],
+        [7.08, 5.82],
+        [5.02, 5.68]
+      ],
+      type: 'scatter'
     }
   ]
-}
-mychart_2168f6d3.setOption(option);
+};
+mychart_0dab0f30.setOption(option);
 });
 </script>
 </div>
