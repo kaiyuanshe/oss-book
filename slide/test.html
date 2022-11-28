@@ -10,76 +10,78 @@
     <link rel="stylesheet" href="./dist/reveal.css" />
     <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/base16/zenburn.css" />
-    <script type="text/javascript" src="../assets/echarts.min.js"></script>
+
+
   </head>
   <body>
     <div class="reveal">
-      <div class="slides">
-        <section>
-        <div id="chart_20819" style="width: 600px;height:400px;"></div>
-           <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    var mychart_20819 = echarts.init(document.getElementById('chart_20819'));
-                    var option = {
-                      title: {
-                        text: '圆环图的例子',
-                        left: 'center',
-                        top: 'center'
-                      },
-                      series: [
-                        {
-                          type: 'pie',
-                          data: [
-                            {
-                              value: 335,
-                              name: 'A'
-                            },
-                            {
-                              value: 234,
-                              name: 'B'
-                            },
-                            {
-                              value: 1548,
-                              name: 'C'
-                            }
-                          ],
-                          radius: ['40%', '70%']
-                        }
-                      ]
-                    };
-                  mychart_20819.setOption(option);
-                });
-           </script>
-</section>
-        
-<section>
-<div id="chart_868760" style="width: 600px;height:400px;"></div>
+      <div class="slides"><section undefined><!-- html -->
+<div id="chart_732871" style="width: 600px;height:400px;"></div>
                 <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    var mychart_868760 = echarts.init(document.getElementById('chart_868760'));
+                    var mychart_732871 = echarts.init(document.getElementById('chart_732871'));
                     var option = {
-                      xAxis: {
-                        data: ['A', 'B', 'C', 'D', 'E']
-                      },
-                      yAxis: {},
-                      series: [
-                        {
-                          data: [10, 22, 28, 43, 49],
-                          type: 'bar',
-                          stack: 'x'
-                        },
-                        {
-                          data: [5, 4, 3, 5, 10],
-                          type: 'bar',
-                          stack: 'x'
-                        }
-                      ]
-                    };
-                  mychart_868760.setOption(option);
+
+
+  title: {
+    text: '圆环图的例子',
+    left: 'center',
+    top: 'center'
+  },
+  series: [
+    {
+      type: 'pie',
+      data: [
+        {
+          value: 335,
+          name: 'A'
+        },
+        {
+          value: 234,
+          name: 'B'
+        },
+        {
+          value: 1548,
+          name: 'C'
+        }
+      ],
+      radius: ['40%', '70%']
+    }
+  ]
+};
+mychart_732871.setOption(option);
                 });
                 </script>
-        </section>
-      </div>
+
+</section><section undefined>
+<!-- html -->
+<div id="chart_192624" style="width: 600px;height:400px;"></div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var mychart_192624 = echarts.init(document.getElementById('chart_192624'));
+                    var option = {
+
+
+  xAxis: {
+    data: ['A', 'B', 'C', 'D', 'E']
+  },
+  yAxis: {},
+  series: [
+    {
+      data: [10, 22, 28, 43, 49],
+      type: 'bar',
+      stack: 'x'
+    },
+    {
+      data: [5, 4, 3, 5, 10],
+      type: 'bar',
+      stack: 'x'
+    }
+  ]
+};
+mychart_192624.setOption(option);
+                });
+                </script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>

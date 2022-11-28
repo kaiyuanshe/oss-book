@@ -36,7 +36,7 @@
 2. A没有认真考虑过许可证合规
 3. A没有及时跟进zip库这个开源项目，原来早在2016年5月份，zip库就改为MIT了。
 
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section ><section  data-markdown><script type="text/template">
 ## 开源许可证兼容性指南
 
 ### 开源许可证兼容性的定义
@@ -50,7 +50,7 @@
 * 合并/修改代码：从要组合的代码中取出整体/部分代码，修改或不修改都可以，然后把它添加到你的代码中构成一个作品。
 * 使用库：没有直接复制代码，在编译或运行时通过链接、导入或其他典型的机制（例如静态与动态链接）把要组合的开源代码绑定在一起。
 
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 备注：（下方内容可以对应到兼容性列表中有【1】【2】【3】的项）
 * 【1】LGPLv2.1 允许你把代码重新按照 GPLv2 以后的 GPL 许可证发布。所以如果你可以把 LGPL 的代码按照合适的 GPL 版本发布，那么你就可以组合两方代码。
 * 【2】MPL的代码和GPL系列的代码组合的结果是，MPL协议的代码遵循MPL协议，GPL系列的代码遵循GPL系列协议，所以原来按照 MPL 发布的那些文件还是可以使用 MPL 条款的，组合而成的作品整体上可以按照GPL系列的许可证发布。
@@ -91,7 +91,7 @@
 
 ​	AGPL，GPL许可证：把AGPL，GPL许可证下的代码和其他模块静态或动态连接在一起就是在基于GPL作品合成一个作品。因此，GPL、AGPL许可证的条款和条件涵盖整个组合作品，你必须分发所有源代码。
 
-</script></section><section ><section data-markdown><script type="text/template">
+</script></section><section ><section  data-markdown><script type="text/template">
 ## 强隔离
 
 ### 聚合体
@@ -100,7 +100,7 @@
 
 ​	如何区分是两个独立的程序，还是一个程序的两个部分呢？这本质上是个法律问题，会根据不同国家、不同地域的法律规定产生变化，但又无法脱离技术。从技术方面来看，独立程序的标准既依赖于通信机制，也依赖于通信语义（交换了什么样的信息）。
 
-</script></section><section data-markdown><script type="text/template">
+</script></section><section  data-markdown><script type="text/template">
 进程间通信的方式有很多，例如：
 
 - 消息传递（管道、FIFO、消息队列）
