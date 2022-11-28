@@ -16,10 +16,10 @@
   <body>
     <div class="reveal">
       <div class="slides"><section undefined><!-- html -->
-<div id="chart_486501" style="width: 600px;height:400px;"></div>
+<div id="chart_321430" style="width: 600px;height:400px;"></div>
                 <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    var mychart_486501 = echarts.init(document.getElementById('chart_486501'));
+                    var mychart_321430 = echarts.init(document.getElementById('chart_321430'));
                     var option = {
 
 
@@ -49,16 +49,16 @@
     }
   ]
 };
-mychart_486501.setOption(option);
+mychart_321430.setOption(option);
                 });
                 </script>
 
 </section><section undefined>
 <!-- html -->
-<div id="chart_7407" style="width: 600px;height:400px;"></div>
+<div id="chart_143707" style="width: 600px;height:400px;"></div>
                 <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    var mychart_7407 = echarts.init(document.getElementById('chart_7407'));
+                    var mychart_143707 = echarts.init(document.getElementById('chart_143707'));
                     var option = {
 
 
@@ -79,7 +79,55 @@ mychart_486501.setOption(option);
     }
   ]
 };
-mychart_7407.setOption(option);
+mychart_143707.setOption(option);
+                });
+                </script>
+
+</section><section undefined>
+<!-- html -->
+<div id="chart_323753" style="width: 600px;height:400px;"></div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var mychart_323753 = echarts.init(document.getElementById('chart_323753'));
+                    var option = {
+
+
+  tooltip: {
+    trigger: 'item',
+    triggerOn: 'mousemove'
+  },
+  series: [
+    {
+      type: 'tree',
+      data: [data],
+      top: '1%',
+      left: '7%',
+      bottom: '1%',
+      right: '20%',
+      symbolSize: 7,
+      label: {
+        position: 'left',
+        verticalAlign: 'middle',
+        align: 'right',
+        fontSize: 9
+      },
+      leaves: {
+        label: {
+          position: 'right',
+          verticalAlign: 'middle',
+          align: 'left'
+        }
+      },
+      emphasis: {
+        focus: 'descendant'
+      },
+      expandAndCollapse: true,
+      animationDuration: 550,
+      animationDurationUpdate: 750
+    }
+  ]
+}
+mychart_323753.setOption(option);
                 });
                 </script></section></div>
     </div>

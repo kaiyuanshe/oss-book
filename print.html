@@ -2595,10 +2595,10 @@ GPLv3 提供以下两项专利承诺：
 <hr />
 <img src="./img/lifecycle-4.png" />
 <div style="break-before: page; page-break-before: always;"></div><div>
-<div id="chart_9cc5ada4" style="width: 600px;height:400px;"></div>
+<div id="chart_2a5b16bd" style="width: 600px;height:400px;"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-var mychart_9cc5ada4 = echarts.init(document.getElementById('chart_9cc5ada4'));
+var mychart_2a5b16bd = echarts.init(document.getElementById('chart_2a5b16bd'));
 var option = {
   title: {
     text: '圆环图的例子',
@@ -2626,16 +2626,16 @@ var option = {
     }
   ]
 };
-mychart_9cc5ada4.setOption(option);
+mychart_2a5b16bd.setOption(option);
 });
 </script>
 </div>
 <hr />
 <div>
-<div id="chart_bdb121d5" style="width: 600px;height:400px;"></div>
+<div id="chart_6e4a2032" style="width: 600px;height:400px;"></div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-var mychart_bdb121d5 = echarts.init(document.getElementById('chart_bdb121d5'));
+var mychart_6e4a2032 = echarts.init(document.getElementById('chart_6e4a2032'));
 var option = {
   xAxis: {
     data: ['A', 'B', 'C', 'D', 'E']
@@ -2654,7 +2654,53 @@ var option = {
     }
   ]
 };
-mychart_bdb121d5.setOption(option);
+mychart_6e4a2032.setOption(option);
+});
+</script>
+</div>
+<hr />
+<div>
+<div id="chart_2168f6d3" style="width: 600px;height:400px;"></div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+var mychart_2168f6d3 = echarts.init(document.getElementById('chart_2168f6d3'));
+var option = {
+  tooltip: {
+    trigger: 'item',
+    triggerOn: 'mousemove'
+  },
+  series: [
+    {
+      type: 'tree',
+      data: [data],
+      top: '1%',
+      left: '7%',
+      bottom: '1%',
+      right: '20%',
+      symbolSize: 7,
+      label: {
+        position: 'left',
+        verticalAlign: 'middle',
+        align: 'right',
+        fontSize: 9
+      },
+      leaves: {
+        label: {
+          position: 'right',
+          verticalAlign: 'middle',
+          align: 'left'
+        }
+      },
+      emphasis: {
+        focus: 'descendant'
+      },
+      expandAndCollapse: true,
+      animationDuration: 550,
+      animationDurationUpdate: 750
+    }
+  ]
+}
+mychart_2168f6d3.setOption(option);
 });
 </script>
 </div>
