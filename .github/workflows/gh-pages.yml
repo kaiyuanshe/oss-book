@@ -29,8 +29,10 @@ jobs:
         uses: actions/setup-node@v3.4.1
         
       - run: npm install -g reveal-md
+
+      - run: cp render.js /usr/local/lib/node_modules/reveal-md/lib/render.js
       
-      - run: reveal-md src/ --preprocessor preproc.js --separator "^---\n" --vertical-separator "^------\n" --static ./book/slide
+      - run: reveal-md src/ --preprocessor preproc.js --scripts ./assets/echarts.min.js --separator "^---\n" --vertical-separator "^------\n" --static ./book/slide
 
       - run: cp black.css ./book/slide/dist/theme/black.css
 

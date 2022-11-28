@@ -9,7 +9,7 @@ module.exports = (markdown, options) => {
             if(line=="```echarts"){
                 is_open = true;
                 rnd = Math.ceil(Math.random()*1000000);
-                line = "<div id=\"chart_"+rnd+"\" style=\"width: 600px;height:400px;\"></div>\n\
+                line = "<!-- html -->\n<div id=\"chart_"+rnd+"\" style=\"width: 600px;height:400px;\"></div>\n\
                 <script>\n\
                 document.addEventListener('DOMContentLoaded', function() {\n\
                     var mychart_"+rnd+" = echarts.init(document.getElementById('chart_"+rnd+"'));\n\
