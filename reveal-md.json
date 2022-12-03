@@ -1,0 +1,6 @@
+{
+    "preprocessor": "preproc.js",
+    "scripts": "./assets/echarts.min.js",
+    "separator": "^---\n",
+    "verticalSeparator": "^------\n"
+}
