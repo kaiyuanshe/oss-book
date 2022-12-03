@@ -11,7 +11,7 @@ create-missing = false
 [preprocessor.echarts]
 
 [output.html]
-additional-js = ["assets/echarts.min.js"]
+additional-js = ["assets/echarts.min.js","assets/MathJax.js"]
 
 [output.html.fold]
 enable = true

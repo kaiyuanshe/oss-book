@@ -89,3 +89,13 @@
   ]
 };
 ```
+
+---
+
+$$ u(q;\theta) = \theta q - p. $$
+
+$$ {\partial^2Q \over \partial s \partial F} > 0. $$
+
+$$ q^P_j = Q(F_j, s_j) = [(F_0 + \eta f_j)s_j]^{1/4}, $$
+
+$$ q^S_j = Q(F_j, s_j) = [(F_0 + \eta f_j + \eta \delta_j f_{-j})s_j]^{1/4} $$.
