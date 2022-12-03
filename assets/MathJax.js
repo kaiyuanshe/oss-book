@@ -1,13 +1,14 @@
 (function () {
   var newMathJax = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js';
   var oldMathJax = 'cdn.mathjax.org/mathjax/latest/MathJax.js';
+  var config = '?config=TeX-AMS-MML_HTMLorMML';
 
   var replaceScript = function (script, src) {
     //
     //  Make redirected script
     //
     var newScript = document.createElement('script');
-    newScript.src = newMathJax + src.replace(/.*?(\?|$)/, '$1');
+    newScript.src = newMathJax + config;
     //
     //  Move onload and onerror handlers to new script
     //
