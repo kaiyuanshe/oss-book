@@ -105,4 +105,4 @@ $$ q^S_j = Q(F_j, s_j) = [(F_0 + \eta f_j + \eta \delta_j f_{-j})s_j]^{1/4} $$.
 
 ---
 
-((zbw:src/key:1-2))
+((zbw:src/key))

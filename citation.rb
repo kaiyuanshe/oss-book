@@ -1,5 +1,7 @@
 require 'json'
-require "tomlrb"
+require 'tomlrb'
+require 'kramdown'
+require 'fileutils'
 
 REPOS = {}
 
@@ -20,6 +22,23 @@ def get_url(item)
     return url
 end
 
+def move_image(name, path, md)
+    html = Kramdown::Document.new(md).to_html
+    html.scan(/\<img.+\>/).each do |str|
+        str.scan(/src=\"(\S+)\"/).each do |srcs|
+            srcs.each do |src|
+                source =  File.expand_path("./repos/#{name}/#{path.split("/")[0..-2].join("/")}/#{src}")
+                if File.exists? source
+                    dist = File.expand_path("./src/#{src}")
+                    dist_dir = File.expand_path("src/"+src.split("/")[0..-2].join("/"))
+                    `mkdir -p #{dist_dir}` unless Dir.exists?(dist_dir)
+                    FileUtils.copy(source, dist)
+                end
+            end
+        end
+    end
+end
+
 def replace_citation(content)
     citation_index = 0
     citation_list = ""
@@ -35,6 +54,7 @@ def replace_citation(content)
                 md = md.split("\n")[start.to_i-1, eof.to_i-1].join("\n")
             end
         end
+        move_image(name, path, md)
         citation_index += 1
         citation_list = citation_list + "[^#{citation_index}]: [#{item}](#{get_url(item)})\n\n"
         md + "[^#{citation_index}]"
