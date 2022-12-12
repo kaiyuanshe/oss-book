@@ -21,6 +21,13 @@ jobs:
 
       - run: cargo install mdbook-echarts
 
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+      
+      - run: gem install tomlrb
+
       - run: mdbook build
       
       - run: cp book.js ./book/book.js

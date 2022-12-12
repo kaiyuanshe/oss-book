@@ -10,9 +10,15 @@ create-missing = false
 
 [preprocessor.echarts]
 
+[preprocessor.citation]
+command = "ruby citation.rb"
+
 [output.html]
 additional-js = ["assets/echarts.min.js","assets/MathJax.js"]
 
 [output.html.fold]
 enable = true
 level = 0
+
+[citation]
+zbw = {repo = "https://github.com/zhuangbiaowei/wiki.md", branch = "main", ref = ""}
