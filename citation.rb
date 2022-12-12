@@ -47,6 +47,9 @@ def list_chapter(arr)
     arr.each do |item|
         chapter = item["Chapter"]
         chapter["content"] = replace_citation(chapter["content"])
+        if File.exists?("./src/"+chapter["path"])
+            File.write("./src/"+chapter["path"], chapter["content"])
+        end
         if chapter["sub_items"]
             list_chapter(chapter["sub_items"])
         end
